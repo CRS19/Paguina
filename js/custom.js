@@ -12,9 +12,7 @@ $(document).ready(function() {
     });
 
 
-    userFeed.run();
-
-    
+    userFeed.run();    
     // This will create a single gallery from all elements that have class "gallery-item"
  //   $('.gallery').magnificPopup({
  //       type: 'image',
@@ -23,6 +21,5 @@ $(document).ready(function() {
  //           enabled: true
  //       }
  //   });
-
 
 });
