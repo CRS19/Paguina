@@ -3,12 +3,14 @@ $(document).ready(function() {
 
     var userFeed = new Instafeed({
         get: 'user',
-        userId: '1585344637', //Es el id del usurio del cual se quiere que se muestren las fotos
-        limit: 12,
+        userId: '8987997106',
+        clientId: '924f677fa3854436947ab4372ffa688d',
+        accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
         resolution: 'standard_resolution',
-        accessToken: '1585344637.1677ed0.3b30b815079642a58665bb34a9013356', // creado en intagram.pixelunion.net
+        template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
         sortBy: 'most-recent',
-        template: '<div class="col-lg-3 instaimg"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+        limit: 4,
+        links: false
     });
 
 
